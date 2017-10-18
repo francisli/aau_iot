@@ -111,7 +111,7 @@ app.listen(3000, function () {
                         <li class="fragment">Save as 'index.js' in your new folder</li>
                     </ul>
                     <pre><code class="hljs" data-trim contenteditable width>
-//import express 
+//import express
 var express = require('express');
 //create express object named app
 var app = express();
@@ -132,7 +132,8 @@ app.get('/', function(req, res) {
                     <ul>
                         <li>Create a new file in Sublime</li>
                         <li class="fragment">Enter the code below without the comments:</li>
-                        <li class="fragment">Save as 'index.html' in your new folder</li>
+                        <li class="fragment">Create a new folder called 'public' in the webserver folder</li>
+                        <li class="fragment">Save as 'index.html' in your new public folder</li>
                     </ul>
                     <pre><code class="hljs" data-trim contenteditable width>
 <!DOCTYPE html>
@@ -147,7 +148,10 @@ app.get('/', function(req, res) {
  </code></pre>
                 </section>
                 <section>
-                    <h3>Open http://localhost:3030/ in the browser</h3>
+                  <ul>
+                      <li>In the Terminal, run node: node index.js</li>
+                      <li class="fragment">Open <a href="http://localhost:3030/" target="_new">http://localhost:3030/</a> in the browser</li>
+                  </ul>
                 </section>
                 <section>
                     <h3>Takes a few minutes to add some html to the page</h3>
