@@ -213,22 +213,26 @@ app.get('/', function(req, res) {
                     </a>
                 </section>
                 <section>
+                  <div style="float: left; width: 70%">
                     <img src="img/joystick.png">
-                </section>
-                <section>
+                  </div>
+                  <div style="float: left; width: 30%">
+                    <br>
                     <h4>Connections</h4>
                     <p>GND -> GND</p>
                     <p>5V -> 5V</p>
-                    <p>Vrx -> A1</p>
-                    <p>Vry -> A0</p>
+                    <p>Vrx -> A0</p>
+                    <p>Vry -> A1</p>
                     <p>SW -> 2</p>
+                  </div>
                 </section>
                 <section>
                     <p>Upload joystick with arduino</p>
                 </section>
 
                 <section>
-                    <p>cd 'joystick_p5js' && npm install && node app.js && localhost:3000 in the browser</p>
+                    <p>cd 'joystick_p5js' && npm install && node app.js && <a href="http://localhost:3000" target="_new">localhost:3000</a> in the browser</p>
+                    <p>Edit code: make sure serial port name '/dev/cu.usbmodem14111' matches your device (see Port setting in Arduino)</p>
                 </section>
 
 
